@@ -25,10 +25,10 @@ PowerConsumptionDataSet$DateTime <- strptime(PowerConsumptionDataSet$DateTime, "
 
 # Create Plot 1
 # -----------------------------------------------------------------------------------------------------------------------------------
-png("plot1.png")
+png("plot1.png", width = 480,height = 480)
 par(mar = c(5,4,3,2) + 0.1)       
-hist(PowerConsumptionDataSet$Global_active_power, main = NULL, xlab = NULL, col = "red", cex.axis = 0.8, cex.lab = 0.8)
-title(main = "Global Active Power", xlab = "Global Active Power (kilowatts)", cex.lab = 0.8, cex.main = 1)
+hist(PowerConsumptionDataSet$Global_active_power, col = "red", main = "Global Active Power", 
+	xlab = "Global Active Power (kilowatts)", cex.lab = 0.8, cex.main = 1, cex.axis = 0.8)
 dev.off()
 # -----------------------------------------------------------------------------------------------------------------------------------
 

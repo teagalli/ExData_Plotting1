@@ -24,7 +24,7 @@ PowerConsumptionDataSet$DateTime <- strptime(PowerConsumptionDataSet$DateTime, "
 
 # Create Plot 3
 # -----------------------------------------------------------------------------------------------------------------------------------
-png("plot3.png")
+png("plot3.png", width = 480,height = 480)
 plot(x = PowerConsumptionDataSet$DateTime, y = PowerConsumptionDataSet$Sub_metering_1, type = "l", xlab = "", 
      ylab = "Energy sub metering", cex.axis = 0.8, cex.lab = 0.9)
 lines(x = PowerConsumptionDataSet$DateTime, y = PowerConsumptionDataSet$Sub_metering_2, col = "red")

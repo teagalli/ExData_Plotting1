@@ -24,7 +24,7 @@ PowerConsumptionDataSet$DateTime <- strptime(PowerConsumptionDataSet$DateTime, "
 
 # Create Plot 2
 # -----------------------------------------------------------------------------------------------------------------------------------
-png("plot2.png")
+png("plot2.png", width = 480,height = 480)
 plot(x = PowerConsumptionDataSet$DateTime, y = PowerConsumptionDataSet$Global_active_power, type = "l", 
      xlab = "", ylab = "Global Active Power (kilowatts)", cex.lab = 0.8, cex.axis = 0.8)
 dev.off()
